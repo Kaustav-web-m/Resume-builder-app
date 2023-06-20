@@ -1,0 +1,139 @@
+.h1{
+  text-align: center;
+}
+.txt{
+  font-size: 20px;
+  
+}
+.outer-div{
+   width: 800px ;
+   max-width: 100% !important;
+}
+.div1{
+  display: flex;
+  justify-content: space-between;
+}
+.info-btn{
+  font-size:20px;
+  margin-right: 12px;
+}
+.btn{
+  display: flex;
+  background-color: white;
+  border-color: white;
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.drag.disable{
+  background-color:grey !important;
+}
+
+
+.hide {
+  display: none !important;
+}
+
+
+.info-btn:hover + .hide {
+  margin-top: 30px;
+  display: block !important;
+  color: black;
+}
+
+.input-box{
+  width: 400px;
+  padding: 12px ;
+  
+  
+  border: 2px solid;
+  border-radius: 4px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "✖";
+  color: white;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: gray;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #D0BCFF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  content: "✓";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: purple;
+  color: white;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.save-btn{
+  align-items: center;
+  transition-duration: 0.4s;
+  height: 50px;
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 250px;
+  background-color: #8A4893; 
+  color: white;
+  border-color: #8A4893;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.save-btn:hover {
+  background-color: #4b0a53d5; 
+  color: white;
+}
